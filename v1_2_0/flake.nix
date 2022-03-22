@@ -1,5 +1,5 @@
 {
-  description = ''A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store'';
+  description = ''Self-contained, lightweight, RESTful document store.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-litestore-v1_2_0.flake = false;
   inputs.src-litestore-v1_2_0.owner = "h3rald";
-  inputs.src-litestore-v1_2_0.ref   = "refs/tags/v1.2.0";
+  inputs.src-litestore-v1_2_0.ref   = "v1_2_0";
   inputs.src-litestore-v1_2_0.repo  = "litestore";
   inputs.src-litestore-v1_2_0.type  = "github";
   

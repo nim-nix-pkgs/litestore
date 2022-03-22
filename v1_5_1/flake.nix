@@ -9,7 +9,7 @@
   
   inputs.src-litestore-v1_5_1.flake = false;
   inputs.src-litestore-v1_5_1.owner = "h3rald";
-  inputs.src-litestore-v1_5_1.ref   = "refs/tags/v1.5.1";
+  inputs.src-litestore-v1_5_1.ref   = "v1_5_1";
   inputs.src-litestore-v1_5_1.repo  = "litestore";
   inputs.src-litestore-v1_5_1.type  = "github";
   
