@@ -1,5 +1,5 @@
 {
-  description = ''A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store'';
+  description = ''Self-contained, lightweight, RESTful document store.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
