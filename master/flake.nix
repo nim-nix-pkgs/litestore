@@ -16,7 +16,7 @@
   inputs."jwt".owner = "nim-nix-pkgs";
   inputs."jwt".ref   = "master";
   inputs."jwt".repo  = "jwt";
-  inputs."jwt".dir   = "";
+  inputs."jwt".dir   = "master";
   inputs."jwt".type  = "github";
   inputs."jwt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jwt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."duktape".owner = "nim-nix-pkgs";
   inputs."duktape".ref   = "master";
   inputs."duktape".repo  = "duktape";
-  inputs."duktape".dir   = "";
+  inputs."duktape".dir   = "master";
   inputs."duktape".type  = "github";
   inputs."duktape".inputs.nixpkgs.follows = "nixpkgs";
   inputs."duktape".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -41,10 +41,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-litestore-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-litestore-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }
