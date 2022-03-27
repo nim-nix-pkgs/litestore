@@ -11,6 +11,7 @@
   inputs.src-litestore-v1_11_0.ref   = "refs/tags/v1.11.0";
   inputs.src-litestore-v1_11_0.owner = "h3rald";
   inputs.src-litestore-v1_11_0.repo  = "litestore";
+  inputs.src-litestore-v1_11_0.dir   = "";
   inputs.src-litestore-v1_11_0.type  = "github";
   
   inputs."jwt".owner = "nim-nix-pkgs";
