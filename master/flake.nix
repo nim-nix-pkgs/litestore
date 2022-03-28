@@ -11,7 +11,6 @@
   inputs.src-litestore-master.ref   = "refs/heads/master";
   inputs.src-litestore-master.owner = "h3rald";
   inputs.src-litestore-master.repo  = "litestore";
-  inputs.src-litestore-master.dir   = "";
   inputs.src-litestore-master.type  = "github";
   
   inputs."jwt".owner = "nim-nix-pkgs";

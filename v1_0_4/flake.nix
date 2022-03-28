@@ -11,7 +11,6 @@
   inputs.src-litestore-v1_0_4.ref   = "refs/tags/v1.0.4";
   inputs.src-litestore-v1_0_4.owner = "h3rald";
   inputs.src-litestore-v1_0_4.repo  = "litestore";
-  inputs.src-litestore-v1_0_4.dir   = "";
   inputs.src-litestore-v1_0_4.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
