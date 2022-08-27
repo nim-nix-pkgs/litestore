@@ -371,7 +371,7 @@
         "jwt": "jwt",
         "nimgen": "nimgen_2",
         "nixpkgs": "nixpkgs",
-        "src-litestore-master": "src-litestore-master"
+        "src-litestore-v1_12_0": "src-litestore-v1_12_0"
       }
     },
     "src-bearssl-master": {
@@ -493,7 +493,7 @@
         "type": "github"
       }
     },
-    "src-litestore-master": {
+    "src-litestore-v1_12_0": {
       "flake": false,
       "locked": {
         "lastModified": 1660922855,
@@ -505,7 +505,7 @@
       },
       "original": {
         "owner": "h3rald",
-        "ref": "refs/heads/master",
+        "ref": "refs/tags/v1.12.0",
         "repo": "litestore",
         "type": "github"
       }
