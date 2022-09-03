@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+pages=(
+  md/metadata.md
+  md/overview.md
+    md/use-cases.md
+    md/architecture.md
+  md/getting-started.md
+  md/usage.md
+  md/auth.md
+  md/configuration-file.md
+  md/middleware.md
+    md/global-js-objects.md
+  md/system-documents.md
+  md/multiple-stores.md
+  md/admin_app.md
+  md/api.md
+    md/api_info.md
+    md/api_dir.md
+    md/api_docs.md
+    md/api_assets.md
+    md/api_tags.md
+    md/api_indexes.md
+    md/api_stores.md
+    md/api_assets.md
+  md/nim-api.md
+    md/nim-api_high.md
+    md/nim-api_low.md
+  md/credits.md
+)
+cd src/admin
+for page in ${pages[@]}
+do
+  (cat "${page}"; printf "\n\n") >> LiteStore_UserGuide.md
+done
+hastyscribe --field/version:1.11.0 LiteStore_UserGuide.md
+rm LiteStore_UserGuide.md
+mv LiteStore_UserGuide.htm ../..
+cd ../..
